@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+<h1>Compose</h1>
+
+<form action="/" method="post">
+  <div class="form-group">
+    <label >Title</label>
+    <input type="text" name="data" class="form-control" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label >Content</label>
+  <textarea name="text" class="form-control" rows="8" cols="80"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<h1>Delete</h1>
+<form  action="/delete" method="post">
+  <div class="form-group">
+    <label >Title</label>
+    <input type="text" name="delete" class="form-control" autocomplete="off">
+  </div>
+  <button type="submit" class="btn btn-primary">Delete</button>
+</form>
+
+
+
+<%- include("partials/footer")  -%>

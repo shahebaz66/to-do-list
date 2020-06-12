@@ -1,0 +1,15 @@
+<%- include("partials/header") -%>
+<i class="fa fa-heart-red"></i>
+<h1>Home</h1>
+<p><%= data%></p>
+  <% final.forEach(function (final) {%>
+  <h1><%=final.title%></h1>
+  <p><%=final.content.substring(0,100)+"..."%><a href="/posts/<%=final.title%>">read more</a></p>
+
+
+<%});%>
+
+
+
+
+<%- include("partials/footer")  -%>
